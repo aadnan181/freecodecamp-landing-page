@@ -1,0 +1,440 @@
+body {
+  background-color: rgb(40, 40, 40);
+  font-family: 'Rokkitt';
+}
+#header {
+  width: 100%;
+  height: 70px;
+  background-color: teal;
+  position: fixed;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  border: 3px solid black;
+}
+#header-img {
+  position: relative;
+  height: 80%;
+  top: 7px;
+  left: 2px;
+}
+#nav-bar {
+  width: 20%;
+  height: 100%;
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
+.navp {
+  text-align: center;
+  font-size: 18px;
+}
+.nav-link {
+  padding-top: 2%
+}
+@media (max-width: 952px) {
+  #nav-bar {
+    width: 30%;
+    transition: 1s;
+  }
+}
+@media (max-width: 625px) {
+  #nav-bar {
+    width: 35%;
+    transition: 1s;
+  }
+}
+@media (max-width: 500px) {
+  #nav-bar {
+    width: 55%;
+    transition: 1s;
+  }
+  .nav-link {
+    padding-top: 3%;
+    transition: 1s;
+  }
+}
+@media (max-width: 370px) {
+  #nav-bar {
+    max-width: 65%;
+    transition: 1s;
+  }
+}
+.nav1 {
+  background-color: rgb(204, 102, 102);
+  width: 100%;
+}
+.nav2 {
+  background-color: rgb(242, 183, 124);
+  width: 100%;
+}
+.nav3 {
+  background-color: rgb(240, 232, 201);
+  width: 100%;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+.nav1:hover {
+  animation-name: hover1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.nav2:hover {
+  animation-name: hover2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.nav3:hover {
+  animation-name: hover3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+a:visited {
+  color: black;
+}
+@keyframes hover1 {
+  100% {
+    color: rgb(204, 102, 102);
+    background-color: black
+  }
+}
+@keyframes hover2 {
+  100% {
+    color: rgb(242, 183, 124);
+    background-color: black
+  }
+}
+@keyframes hover3 {
+  100% {
+    color: rgb(240, 232, 201);
+    background-color: black
+  }
+}
+h1 {
+  color: rgb(210, 210, 180);
+  -webkit-text-stroke: 2px black;
+  font-family: Rokkitt;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+h2 {
+  color: rgb(210, 210, 180);
+  -webkit-text-stroke: 1px black;
+  font-family: Rokkitt;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: -5px;
+}
+#mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+  width: 30%;
+  height: 90px;
+  background-color: rgba(240, 232, 201, .8);
+  border-radius: 5px;
+  border: 5px solid black;
+}
+
+#email {
+  margin-top: 10px;
+  color: rgb(240, 232, 201);
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 30px;
+  width: 70%;
+}
+#submit {
+  background-color: teal;
+  color: #222222;
+  font-size: 1.4em;
+  height: 30px;
+  width: 100px;
+  display: block;
+  margin: auto;
+  border: 1px black solid;
+  cursor: pointer;
+  font-family: 'Rokkitt';
+}
+@media (max-width: 900px) {
+  #mail {
+    width: 60vw;
+    transition: 1s;
+  }
+}
+@media (max-width: 370px) {
+  #mail {
+    max-width: 90vw;
+    transition: 1s;
+  }
+}
+#submit:hover {
+  animation-name: hello;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes hello {
+  100% {
+    background-color: rgb(204, 102, 102);
+  }
+}
+#mail:hover {
+  animation-name: mail;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes mail {
+  0% {
+    border-color: black;
+  }
+  30% {
+    border-color: rgb(204, 102, 102);
+  }
+  60% {
+    border-color: rgb(242, 183, 124);
+  }
+  100% {
+    border-color: black;
+  }
+}
+#features {
+  width: 70%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+#one {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid black;
+  background-color: rgb(204, 102, 102);
+}
+#two {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid black;
+  background-color: rgb(242, 183, 124);
+}
+#three {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid black;
+  background-color: rgb(240, 232, 201);
+}
+.logos {
+  width: 10%;
+  height: 80%;
+  margin-top: 0.5%;
+}
+.fp {
+  color: black;
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+#pricing {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 70%;
+}
+@media (max-width: 1160px) {
+  .fp {
+    font-size: 1em;
+    transition: 1s;
+  }
+}
+@media (max-width: 960px) {
+  .logos {
+    width: 5%;
+    height: 60%;
+    margin-top: 2%;
+    transition: 1s;
+  }
+  .fp {
+    margin-left: 1%;
+    transition: 1s;
+  }
+}
+@media (max-width: 625px) {
+  .logos {
+    width: 8%;
+    height: 70%;
+    margin-left: 2%;
+    transition: 1s;
+  }
+  .fp {
+    margin-left: 4%;
+    margin-top: -0.5%;
+    transition: 1s;
+  }
+}
+@media (max-width: 370px) {
+  #features {
+    width: 97%;
+    transition: 1s;
+  }
+}
+.pbox {
+  height: 100%;
+  border-radius: 8px;
+  width: 20vw;
+}
+.pbox1 {
+  background-color: rgb(204, 102, 102);
+}
+.pbox2 {
+  background-color: rgb(242, 183, 124);
+}
+.pbox3 {
+  background-color: rgb(240, 232, 201);
+}
+@media (max-width: 1175px) {
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+    transition: 2s;
+  }
+  .pbox {
+    width: 350px;
+    transition: 1s;
+  }
+}
+@media (max-width: 374px) {
+  .pbox {
+    width: 90vw;
+    transition: 1s;
+  }
+}
+#top {
+  margin-top: -5px;
+  font-size: 40px;
+  text-align: center;
+  background-color: black;
+}
+.top1 {
+  color: rgb(204, 102, 102);
+}
+.top2 {
+  color: rgb(242, 183, 124);
+}
+.top3 {
+  color: rgb(240, 232, 201);
+}
+.content {
+  width: 80%;
+  font-size: 25px;
+}
+#bottom {
+  text-align: center;
+  background-color: black;
+  font-size: 40px;
+}
+.bottom1 {
+  color: rgb(204, 102, 102);
+}
+.bottom2 {
+  color: rgb(242, 183, 124);
+}
+.bottom3 {
+  color: rgb(240, 232, 201);
+}
+.pbox:hover {
+  animation-name: apbox;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes apbox {
+  100% {
+    background-color: black;
+    color: rgb(210, 210, 180);
+  }
+}
+.pbox:hover .bottom1 {
+  animation-name: bottom1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes bottom1{
+  50% {
+    background-color: rgb(204, 102, 102);
+    color: black;
+  }
+}
+.pbox:hover .bottom2 {
+  animation-name: bottom2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes bottom2{
+  50% {
+    background-color: rgb(242, 183, 124);
+    color: black;
+  }
+}
+.pbox:hover .bottom3 {
+  animation-name: bottom3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes bottom3{
+  50% {
+    background-color: rgb(240, 232, 201);
+    color: black;
+  }
+}
+#how-it-works {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+#how-it-works > iframe {
+  max-width: 650px;
+  width: 100%;
+  max-height: 300px;
+}
+footer {
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px;
+  background-color: teal;
+  margin-top: 30px;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 3px solid black;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
